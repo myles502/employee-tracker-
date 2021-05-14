@@ -10,9 +10,10 @@ function App(props) {
       <Title>Employees List
       <form>
       <div className="form-group">
-        <label htmlFor="search">Search:</label>
+        <label htmlFor="search"></label>
         <input
-          onChange={props.}
+          onChange={props.handleInputChange}
+          value={props.search}
           name="search"
           type="text"
           className="form-control"
