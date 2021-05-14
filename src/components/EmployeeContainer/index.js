@@ -21,6 +21,24 @@ state = {
  );
 }
 
+
+searchEmployees = (query) => {
+    API.search(query)
+      .then((res) => this.setState({ result: res.data }))
+      .catch((err) => console.log(err));
+};
+
+handleInputChange = (event) => {
+    const value = event.target.value;
+    this.setState({ search: value });
+};
+
+handleFormSubmit = (event) => {
+    event.preventDefault();
+    this.searchMovies(this.state.search);
+};
+
+
 render(){
     return ( <div> 
       {this.state.employees.length ? (
