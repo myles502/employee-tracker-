@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import API from '../../Utils/API'; 
 import EmployeeCard from '../EmployeeCard';
+import SearchForm from '../searchForm/index'
 
 class EmployeeContainer extends Component {
 state = {
@@ -28,7 +29,9 @@ render(){
             return ( 
                 <EmployeeCard
                 name= {employee.name?.first + " " + employee.name?.last} 
-                picture= {employee.picture?.large}/>
+                picture= {employee.picture?.large}
+                phone = {employee.phone}
+                email = {employee.email}/>
             )
             
           })
