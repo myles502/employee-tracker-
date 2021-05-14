@@ -24,9 +24,11 @@ render(){
     return ( <div> 
       {this.state.employees.length ? (
           this.state.employees.map((employee) => { 
+            console.log(employee)
             return ( 
                 <EmployeeCard
-                name= {employee.first} />
+                name= {employee.name?.first + " " + employee.name?.last} 
+                picture= {employee.picture?.large}/>
             )
             
           })
