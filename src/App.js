@@ -8,7 +8,7 @@ function App(props) {
   
     return(<Wrapper>
       <Title>Employees List
-      <form>
+      {/* <form>
       <div className="form-group">
         <label htmlFor="search"></label>
         <input
@@ -21,11 +21,12 @@ function App(props) {
           id="search"
         />
         <br />
-        <button className="btn btn-primary">
+        <button onClick={props.handleFormSubmit} className="btn btn-primary">
           Search
         </button>
       </div>
-    </form>
+    </form> */}
+
       </Title>
       <EmployeeContainer />
       
