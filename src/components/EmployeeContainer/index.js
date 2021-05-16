@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import API from "../../Utils/API";
 import EmployeeCard from "../EmployeeCard";
 import SearchForm from "../searchForm";
-import App from "../../App";
+// import App from "../../App";
 
 class EmployeeContainer extends Component {
   state = {
